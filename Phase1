@@ -1,4 +1,4 @@
-Note: Use Bomb1.i64 as a reference
+Note: Use Bomb.i64 as a reference and Bomb1.i64 as the solution for this phase.
 
 It is seen that the function sub_401870 is called repeatedly. Inspecting this function, IDA shows that most of the output
 comments are regarding input validation. This makes sense as this function is called repeatedly after every input. Hence, we
