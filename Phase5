@@ -1,0 +1,43 @@
+Note: Use Bomb4.idb as the reference and Bomb5.idb as the solution for this phase.
+
+Going into the next unknown function after Phase4, we see that this function takes in as user input a string of length 6, and using the first nibble of each of the 6 characters of the string in order, it accesses an array to map these nibbles with charcters from the array given as:
+arr[0] = 69h ; i                 
+arr[1] = 73h ; s
+arr[2] = 72h ; r
+arr[3] = 76h ; v
+arr[4] = 65h ; e
+arr[5] = 61h ; a
+arr[6] = 77h ; w    
+arr[7] = 68h ; h   
+arr[8] = 6Fh ; o
+arr[9] = 62h ; b  
+arr[10] = 70h ; p
+arr[11] = 6Eh ; n   
+arr[12] = 75h ; u 
+arr[13] = 74h ; t  
+arr[14] = 66h ; f   
+arr[15] = 67h ; g
+
+To get the required string 'giants', we require the input characters to be such that the lower 4 bits of these characters
+generate the mapping given by:
+
+1st char - 0xF
+2nd char - 0x0
+3rd char - 0x5
+4th char - 0xB
+5th char - 0xD
+6th char - 0x1
+
+Referring to the ascii table, we can choose our characters given by:
+
+1st char - 0x6F = o
+2nd char - 0x70 = p 
+3rd char - 0x65 = e
+4th char - 0x6B = k
+5th char - 0x6D = m
+6th char - 0x61 = a
+
+Thus, we get 1 possible password as ```opekma```.
+
+Note: This is not a unique password as the higher order nibble can be arbitrary and thus the corresponding character can vary.
+
