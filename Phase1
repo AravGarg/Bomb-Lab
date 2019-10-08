@@ -16,3 +16,5 @@ two strings are equal. Hence we can rename this as string_compare.
 
 Using this to understand sub_401190, this function compares the user input string to ``` Public speaking is very easy ```
 and returns true only if they are equal. Hence, we have the first password, ``` Public speaking is very easy ```.
+
+The function sub_401190 can be renamed as Phase1.
