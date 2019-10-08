@@ -18,3 +18,6 @@ Using this to understand sub_401190, this function compares the user input strin
 and returns true only if they are equal. Hence, we have the first password, ``` Public speaking is very easy ```.
 
 The function sub_401190 can be renamed as Phase1.
+
+There is another function sub_401990 called at every phase, so it makes sense to assume for now that this function checks for
+any input file at every phase input.
