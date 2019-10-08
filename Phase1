@@ -19,5 +19,4 @@ and returns true only if they are equal. Hence, we have the first password, ``` 
 
 The function sub_401190 can be renamed as Phase1.
 
-There is another function sub_401990 called at every phase, so it makes sense to assume for now that this function checks for
-any input file at every phase input.
+
