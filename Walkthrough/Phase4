@@ -1,0 +1,13 @@
+Note: Use Bomb3.idb as a reference and Bomb4.idb as the solution for this phase.
+
+Going into the next unknown function after phase3, we see an unknown function sub_401350. Inspecting this function, we see that this is a recursive algorithm with the base cases:
+algo(0)=1.
+algo(1)=1.
+
+The recursive algorithm used is:
+algo(i)=algo(i-1)+algo(i-2)
+
+This is clearly the Fibonacci series. Hence this function can be renamed as Fibonacci_Index, as it returns the term of the 
+Fibonacci sequence corresponding to the given index.
+
+Using this, we see that the password for this phase is that index which returns 55 when passed onto the Fibonacci_index function. Hence, we get the password for this phase as ```9```.
