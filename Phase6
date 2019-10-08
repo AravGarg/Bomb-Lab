@@ -1,0 +1,37 @@
+Note: Use Bomb5.idb as the reference and Bomb6.idb as the solution for this phase.
+
+Checking the next unknown function, we first color and group the nodes to simplify the loops and nested loops.
+
+Analysis of outer for loop 1:
+The outer counter iterates through the input array of 6 numbers and calls bomb_explode if the numbers lie outside the range [1,6].
+
+Analysis of for loop 1:
+The outer and inner counter check each of the 15 combinations of the 6 numbers and calls bomb_explode if any pair of numbers are equal.
+
+Hence, from this we see that we need to input 6 distinct numbers in the range [1,6].
+
+Analysis of outer loop 2:
+This loop checks the input number and pushes the corresponding node of the linked list.
+
+Analysis of inner for loop 2:
+This loop iterates through the linked list till we reach the node which corresponds to the input number.
+
+Analysis of for loop 3:
+This loop rearranges the linked list according to the input indices.
+
+Analysis of for loop 4:
+This loop calls bomb_explode if the numbers in the rearranged linked list is not in descending order.
+
+Hence, we see that we need to pass as input the indices [1,6] such that their corresponding numbers are in decreasing order.
+
+Given list:
+1-253
+2-725
+3-301
+4-997
+5-212
+6-432
+
+Hence,our required password is ``` 426315 ```.
+
+This completes the project.
