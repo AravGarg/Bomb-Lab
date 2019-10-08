@@ -1,0 +1,15 @@
+Note: Use Bomb1.idb as a reference and Bomb2.idb as the solution.
+
+The next unknown function is sub_4011B0. Going by Phase1, we can make an educated guess that this function is related to Phase2.
+Inspecting this function, there is a call to sub_4016BO.
+
+Going into sub_4016BO, htis function calls a sscanf for 6 input numbers and returns true only if 6 numbers are read and retrieved
+to memory. Thus, we can rename this function as get_six_numbers.
+
+Using this to understand sub_4011B0, we see that the first number required is 1 and each corresponding number is the previous 
+number times the corresponding number index. Hence, the algorithm gives the 6 number sequence:
+``` 1 2 6 24 120 is 720 ```.
+
+This is the password for Phase2.
+
+sub_4011B0  can be renamed as Phase2.
