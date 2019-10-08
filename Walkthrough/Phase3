@@ -1,8 +1,7 @@
 Note:Use Bomb2.idb as a reference and Bomb3.idb as the solution
 
 The next unknown function is sub_401210. Digging into this function, we see that it takes 3 inputs from the user, first an 
-integer between 0 and 7, next a character and third another integer. The correct password depends on the first integer passed in,
-as shown in the jumptable.
+integer between 0 and 7, next a character and third another integer. The correct password depends on the first integer passed in,as shown in the jumptable.
 
 This gives us 8 cases:
 0q777
